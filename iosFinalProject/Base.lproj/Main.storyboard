@@ -322,7 +322,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1l-Vg-aDI">
-                                <rect key="frame" x="128" y="576" width="120" height="44"/>
+                                <rect key="frame" x="127" y="576" width="120" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Transform!"/>
                                 <connections>
@@ -330,7 +330,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tCa-iG-jPq">
-                                <rect key="frame" x="16" y="42" width="343" height="410"/>
+                                <rect key="frame" x="16" y="32" width="343" height="410"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="410" id="l5g-ho-NN9"/>
                                 </constraints>
@@ -339,20 +339,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tCa-iG-jPq" firstAttribute="top" secondItem="f9i-GZ-8yb" secondAttribute="top" constant="22" id="1cv-Sv-dWj"/>
-                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="top" secondItem="r9m-ha-7V4" secondAttribute="bottom" constant="8" symbolic="YES" id="E1E-zz-4NI"/>
+                            <constraint firstItem="tCa-iG-jPq" firstAttribute="top" secondItem="f9i-GZ-8yb" secondAttribute="top" constant="12" id="1cv-Sv-dWj"/>
+                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="centerX" secondItem="h8T-eo-x9o" secondAttribute="centerX" id="9dQ-FL-L6n"/>
                             <constraint firstItem="tCa-iG-jPq" firstAttribute="leading" secondItem="OR0-Z6-164" secondAttribute="leadingMargin" id="GnL-50-x3h"/>
                             <constraint firstItem="h8T-eo-x9o" firstAttribute="centerX" secondItem="f9i-GZ-8yb" secondAttribute="centerX" id="Kix-eK-Ap1"/>
                             <constraint firstItem="r9m-ha-7V4" firstAttribute="centerX" secondItem="f9i-GZ-8yb" secondAttribute="centerX" id="UYH-MS-Ng4"/>
                             <constraint firstItem="r9m-ha-7V4" firstAttribute="top" secondItem="h8T-eo-x9o" secondAttribute="bottom" constant="19" id="cVZ-nk-N9o"/>
-                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="leading" secondItem="f9i-GZ-8yb" secondAttribute="leading" constant="128" id="eON-so-xly"/>
-                            <constraint firstItem="h8T-eo-x9o" firstAttribute="top" secondItem="tCa-iG-jPq" secondAttribute="bottom" constant="37" id="guo-sb-4V4"/>
+                            <constraint firstItem="h8T-eo-x9o" firstAttribute="top" secondItem="tCa-iG-jPq" secondAttribute="bottom" constant="47" id="guo-sb-4V4"/>
                             <constraint firstItem="tCa-iG-jPq" firstAttribute="centerX" secondItem="h8T-eo-x9o" secondAttribute="centerX" id="jvy-eC-jSY"/>
-                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="centerX" secondItem="r9m-ha-7V4" secondAttribute="centerX" id="n5t-LA-1RP"/>
+                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="top" secondItem="r9m-ha-7V4" secondAttribute="bottom" constant="8" symbolic="YES" id="kZy-SC-R7n"/>
+                            <constraint firstItem="p1l-Vg-aDI" firstAttribute="leading" secondItem="f9i-GZ-8yb" secondAttribute="leading" constant="127" id="qbC-qA-LxH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f9i-GZ-8yb"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="p1l-Vg-aDI" id="DKx-NT-7ST"/>
                         <outlet property="imageView" destination="tCa-iG-jPq" id="4Hg-uL-LpO"/>
                         <outlet property="pickerBtn" destination="h8T-eo-x9o" id="0OE-IY-zjg"/>
                         <segue destination="cRq-br-hWw" kind="show" identifier="toPost" id="9co-tw-YzE"/>
